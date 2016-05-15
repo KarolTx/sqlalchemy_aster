@@ -7,7 +7,7 @@ v = open(os.path.join(os.path.dirname(__file__), 'sqlalchemy_aster', '__init__.p
 VERSION = re.compile(r".*__version__ = '(.*?)'", re.S).match(v.read()).group(1)
 v.close()
 
-readme = os.path.join(os.path.dirname(__file__), 'README.rst')
+readme = os.path.join(os.path.dirname(__file__), 'README.md')
 
 setup(
     name='sqlalchemy_aster',
